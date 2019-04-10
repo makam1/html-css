@@ -1,0 +1,200 @@
+#page{
+    border: 1px black solid;
+    margin-left: 10%;
+    margin-right:10%;
+
+}
+#logo{
+    border: 1px black solid;
+    width: 100%;
+    height: 15%;
+}
+#photo{
+    width: 40%;
+    height: 70%;
+    margin: 20px;
+}
+#pho{
+    width: 100%;
+    height: 100%;
+}
+#menu{
+    border: 1px black solid;
+    width: 100%;
+    height: 15%;
+    background-color: aqua;
+  
+}
+nav ul {
+    padding: 0px;
+    margin: 0px;
+}
+nav ul li {
+    float: left;
+    position: relative;
+ 
+}
+nav li {
+    list-style-type: none;
+}
+nav ul::after{
+    content:"";
+    display:block;
+    clear: both;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+nav ul li a {
+    padding:20px 30px;
+    color:blue;
+}
+.sous-menu {
+    display: none;
+}
+nav li:hover .sous-menu{
+    display: inline-block;
+    position: absolute;
+    top:100%;
+    left:0px;
+    z-index:100000;
+}
+.sous-menu li {
+    border-bottom: 1px black solid;
+    background-color: cornflowerblue;
+
+}
+.sous-menu li a {
+    padding:15px 30px;
+    font-size: 13px;
+    color:black;
+    width:100%;
+}
+#menu1:hover{
+    border-top:3px solid black;
+    background-color:  paleturquoise;
+}
+#menu2:hover{
+    border-top:3px solid red;
+    background-color:  paleturquoise;
+}
+#menu3:hover{
+    border-top:3px solid white;
+    background-color: paleturquoise;
+}
+#menu4:hover{
+    border-top:3px solid palevioletred;
+    background-color: paleturquoise;
+}
+.MENU{
+    width: 25%;
+    
+}
+#corps{
+    border: 1px black solid;
+    width: 100%;
+    height: 50%;
+}
+#gauche{
+    border: 1px black solid;
+    width: 55%;
+    height: 98%;
+    float: left;
+    margin: 2px;
+    background-color:royalblue;
+  
+}
+#droite{
+    border: 1px white solid;
+    width: 42%;
+    height: 98%;
+    float: right;
+    margin: 2px;
+}
+#droite-haut{
+    border: 1px blue solid;
+    width: 99%;
+    height: 55%; 
+    margin-bottom: 2px;
+}
+#droite-bas{
+    border: 1px blue solid;
+    width: 99%;
+    height: 43%;   
+
+}
+#footer{
+    border: 1px black solid;
+    width: 100%;
+    height: 15%; 
+    background-color: aqua;
+}
+.foot{
+    display: inline-block;
+    width: 32.90%;
+    height: 99%; 
+    text-align: center;
+    margin-top:20px;
+}
+@media screen and (max-width:1000px){
+    #photo{
+        width: 40%;
+        height: 70%;
+        margin: 7px;
+    }
+   
+    nav ul li a {
+        padding:5px 7px;
+        color:blue;
+        font-size:13px;
+    }
+    .sous-menu li a {
+        padding:5px 7px;
+        font-size: 6px;
+        color:black;
+        width:100%;
+    }
+    #gauche{
+        border: 1px black solid;
+        width: 50%;
+        height: 98%;
+        float: left;
+        margin: 1px;
+        background-color:royalblue;
+      
+    }
+    #droite{
+        border: 1px white solid;
+        width: 42%;
+        height: 98%;
+        float: right;
+        margin: 1px;
+    }
+    #droite-haut{
+        border: 1px blue solid;
+        width: 99%;
+        height: 55%; 
+        margin-bottom: 1px;
+    }
+    #droite-bas{
+        border: 1px blue solid;
+        width: 99%;
+        height: 43%;   
+    
+    }
+    #footer{
+        border: 1px black solid;
+        width: 100%;
+        height: 15%; 
+        background-color: aqua;
+    }
+    .foot{
+        display: inline-block;
+        width: 31.33%;
+        height: 99%; 
+        border:none;
+    }
+
+}
+
